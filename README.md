@@ -9,7 +9,7 @@ Neurodegeneration involves complex biological processes, with the resulting dise
 
 <b>Keywords</b>: Neurodegenerative diseases; Blood-based biomarkers; Protein-protein interactions; Multiplex graph ensemble; Graph neural network; Plasma proteomic profiling.
 
-![Image](https://github.com/user-attachments/assets/84bfe8d7-1e8b-44b1-b100-35b05ca35932)
+![Image](https://github.com/user-attachments/assets/6e0c0258-f663-43c2-957a-707f30cf7e80)
 
 ---
 
