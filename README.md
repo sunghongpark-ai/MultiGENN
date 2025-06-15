@@ -34,23 +34,6 @@ The plasma samples of participants were profiled by the Olink Platform, where 1,
 
 ---
 
-## Model implementation
-
-### Overall process
-Given that $d$ and $n$ are the numbers of target proteins and study participants, respectively, the data matrix for the independent effects, denoted by $X\in\mathbb{R}^{d×n}$, consists of the preprocessed expression data for the target proteins. PPIxGPN first extracts the synergetic effects of target proteins, denoted as $Z\in\mathbb{R}^{d×n}$, by propagating the independent effects onto the PPI network $W\in\mathbb{R}^{d×d}$. In this process, the propagation parameter $ϕ\in\mathbb{R}^{d}$ is applied to the proteins for individually controlling the intensity of propagation. Subsequently, the synergetic effect is applied to the estimation parameter, denoted as $Θ_{\*}\in\mathbb{R}^{d}$ (${\*}$: Aβ, GFAP, NfL, pTau), and the individual risks for neurodegenerative biomarkers, denoted as $P_{\*}\in\mathbb{R}^{n}$, are derived. The proposed method encompasses two-layered model architecture, including two parameter sets, $ϕ$ and $Θ_{\*}$, which are optimized by comparing the predicted risk $P_{\*}$ with the real diagnosis, denoted as $Y_{\*}\in\mathbb{R}^{n}$. Notations for PPIxGPN are summarized as below.
-
-| Notation                  | Description                             |
-| :-----------------------: | :-------------------------------------: |
-| $d$                       | Number of study participants            |
-| $n$                       | Number of target proteins               |
-| $X\in\mathbb{R}^{d×n}$    | Independent effect of target proteins   |
-| $Z\in\mathbb{R}^{d×n}$    | Synergetic effect of target proteins    |
-| $ϕ\in\mathbb{R}^{d}$      | Propagation parameter set of PPIxGPN    |
-| $Θ_{\*}\in\mathbb{R}^{d}$ | Estimation parameter set of PPIxGPN     |
-| $P_{\*}\in\mathbb{R}^{n}$ | Predicted risk set for biomarkers       |
-| $Y_{\*}\in\mathbb{R}^{n}$ | Real diagnosis label set for biomarkers |
-| ${\*}$                    | Aβ, GFAP, NfL, pTau                     |
-
 ### Code description
 
 <b>MATLAB (version R2024b)</b>
@@ -58,7 +41,7 @@ Given that $d$ and $n$ are the numbers of target proteins and study participants
   - MATLAB (version R2024b)
 
 - <b>Main code</b>
-  - PPIxGPN
+  - MultiGENN
 
 - <b>Data setting</b>
   - Xdata: independent effect of target proteins
